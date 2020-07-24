@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <title>Covid-19 Tracker for Pakistan</title>
+
+    <style>
+       body
+       {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.781),rgb(0,0,0,0.781)), url(virus-bg.jpg);
+            background-size: cover;
+        }
+        img#flag{
+            width: 50px;
+            height: 40px;
+        }
+        .footer{
+            color: white;
+            font-size: 2rem;
+        }
+        a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid text-light p-5 text-center my-3">
+        <h1>Covid-19 Tracker for Pakistan <span><img src="" id="flag"></span></h1>
+        <h5>Covid-19 Cases Tracker for Pakistan</h5>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-3 text-warning">
+                <h2>Active Cases</h2>
+                <h3 id="active"></h3>
+            </div>
+
+            <div class="col-3 text-info">
+                <h2>Total Cases</h2>
+                <h3 id="cases" style="font-size: large"></h3>
+            </div>
+            
+            <div class="col-3 text-success">
+                <h2>Critical Cases</h2>
+                <h3 id="critical"></h3>
+            </div>
+
+            <div class="col-3 text-danger">
+                <h2>Total Deathes</h2>
+                <h3 id="death"></h3>
+            </div>
+
+            <div class="col-3 text-primary">
+                <h2>Recovered Cases</h2>
+                <h3 id="recovered"></h3>
+            </div>
+
+            <div class="col-3 text-light">
+                <h2>Total Test Done</h2>
+                <h3 id="tests"></h3>
+            </div>
+        </div>
+    </div>
+    <!-- counter - section -->
+    <div class="counter text-center text-danger p-5">
+        <h5 id="count"></h5><span>Views</span>
+    </div>
+    <!-- counter section - END -->
+
+    <!-- footer section -->
+    <div class="footer p-2 text-center">
+        <h6>Covid-19 Tracker for Pakistan by - <a href="https://sulimanfurc.github.io/MyPortfolio/">Suliman Munawar khan</a></h6>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
